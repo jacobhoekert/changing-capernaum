@@ -5,11 +5,20 @@ import axios from "axios";
 import { db } from '../../firebaseConfig';
 
 const PartnerSection = () => {
+  const [hasSubmitted, setHasSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
     suggestion: ""
   });
+
+  const resetForm = () => {
+    setForm({
+      name: "",
+      email: "",
+      suggestion: ""
+    });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,6 +26,10 @@ const PartnerSection = () => {
   }
 
   const handleSubmit = () => {
+    if (form.name != "" && form.email != "" && form.suggestion != "") {
+      setHasSubmitted(true);
+      resetForm();
+    }
     db.collection('business-suggestions').add(form)
       .then(console.log("Document Successfully written!"))
       .catch(err => console.log("Error writing document: ", err));
@@ -64,6 +77,7 @@ const PartnerSection = () => {
             />
           </div>
           <button className="submit-button" onClick={handleSubmit}>Submit</button>
+          { hasSubmitted && <p className="thanks-message">Thanks for your suggestion! We'll get back to you shortly!</p>}
         </div>
       </div>
       <div className="businesses">
