@@ -19,7 +19,7 @@ const Order = () => {
         <h1 className="display-4 how-sanitary-title">Order/Delivery Coming Soon!</h1>
         <h2 className="display-6">Start ordering on April 1st!</h2>
         <p className="lead">
-          We are currently making the transition from Georgia to back home in Colorado, and once we get back to the 719 we'll have two days to buld out our online ordering, delivery system, and payment processing. Check out <Link href="/story">our story</Link> to read about who we are and to see our timeline to see where we've been
+          We are currently making the transition from Georgia to back home in Colorado, and once we get back to the 719 we'll have two days to build out our online ordering, delivery system, and payment processing. Check out <Link href="/story">our story</Link> to read about who we are and to see our timeline to see where we've been
           and how Changing Capernaum was birthed.
         </p>
         <hr />

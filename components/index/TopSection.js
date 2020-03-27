@@ -22,16 +22,11 @@ const TopSection = () => {
             some of your favorite local coffee shops, bakeries, florists, and
             more! We also offer a gifting service to give YOU the opportunity to
             support and love your neighbor. Together, we truly believe we are{" "}
-            <Link href="/story#capernaum-section">Changing Capernaum.</Link>
+            <Link href="/story#capernaum-section">Changing Capernaum (click for definition).</Link>
           </p>
           <Link href="/order">
             <Button className="button" color="primary">
               Order Now!
-            </Button>
-          </Link>
-          <Link href="/movement">
-            <Button className="button" color="primary">
-              Our Vision
             </Button>
           </Link>
           

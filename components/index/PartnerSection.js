@@ -22,7 +22,7 @@ const PartnerSection = () => {
       .catch(err => console.log("Error writing document: ", err));
     axios({
       method: "POST",
-      url: "http://localhost:3000/api/sendMail",
+      url: "https://changingcapernaum.com/api/sendMail",
       data: form
     })
   }
@@ -35,7 +35,7 @@ const PartnerSection = () => {
           We will be delivering products from some of Colorado Springs'
           favorite places! Right now, we deliver from our friends at <a href="https://www.building3coffee.com/">Building
           Three Coffee</a>, <a href="https://www.nightingalebread.com/">Nightingale Bread</a>, and <a href="https://caferedpoint.com/">Cafe Red Point! </a> 
-          Stuck at home and want quality locally roasted coffee, organic bread and pastries, or refreshing smoothies? We want to expand to
+          Stuck at home and want quality locally roasted coffee, organic bread, pastries, or refreshing smoothies? We want to expand to
           any and every small local business <em>in need that you love.</em> In fact,
           send us a suggestion that you believe would fit this vision, and we will add them and start delivering for them!
         </p>

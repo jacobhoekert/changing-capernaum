@@ -32,3 +32,4 @@ yarn-error.log*
 next.config.js
 email.config.js
 firebaseConfig.js
+.now

@@ -32,7 +32,7 @@ const ContactForm = () => {
     setIsLoading(true);
     axios({
       method: "POST",
-      url: "http://localhost:3000/api/sendMail",
+      url: "https://changingcapernaum.com/api/sendMail",
       data: form
     })
       .then(function() {

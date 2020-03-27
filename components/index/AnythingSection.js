@@ -11,7 +11,7 @@ const AnythingSection = () => {
         <h1 className="display-4">Want anything else?</h1>
         <p className="lead">
           Have anything else you need? Running low on toothpaste? Maybe you want
-          some gatorade? Just need a restock of granola bars? We are here to
+          some gatorade? Just need a re-stock of granola bars? We are here to
           help! Drop a line in the custom request box and we will see what we
           can do!
         </p>
