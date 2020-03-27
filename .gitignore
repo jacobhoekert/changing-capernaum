@@ -28,3 +28,7 @@ yarn-error.log*
 # Environment Variables
 .env
 .env.build
+
+next.config.js
+email.config.js
+firebaseConfig.js

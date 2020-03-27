@@ -1,0 +1,151 @@
+.partner-section {
+  padding-bottom: 60px;
+
+  .partner-section-text {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      width: 75%;
+    }
+  
+    @media screen and (max-width: 650px) {
+      width: 90%;
+      padding-top: 60px;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+  
+      input {
+        margin-right: 10px;
+        height: 50px;
+        padding: 10px;
+        border: 1.5px solid rgb(114, 114, 114);
+        font-size: 18px;
+        border-radius: 5px;
+
+        @media screen and (max-width: 1400px) {
+          margin-top: 20px;
+          margin-right: 0px;
+
+        }
+
+      }
+
+      .name-email {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 1400px) {
+          flex-wrap: wrap;
+          width: 80%;
+        }
+
+        @media screen and (max-width: 650px) {
+          width: 100%;
+        }
+
+        .name-input {
+          width: 170px;
+
+          @media screen and (max-width: 1400px) {
+            width: 100%;
+          }
+
+          @media screen and (max-width: 650px) {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+    
+        .email-input {
+          width: 150px;
+
+          @media screen and (max-width: 1400px) {
+            width: 100%;
+          }
+
+          @media screen and (max-width: 650px) {
+            width: 100%;
+            margin-top: 20px;
+          }
+
+        }
+
+      }
+  
+      input:focus {
+        outline: none;
+        background-color: rgb(233, 233, 233);
+      }
+  
+      .suggestion-input {
+        width: 300px;
+
+        @media screen and (max-width: 1400px) {
+          width: 80%;
+          margin-top: 20px;
+        }
+
+        @media screen and (max-width: 650px) {
+          width: 100%;
+        }
+
+      }
+  
+      .submit-button {
+        height: 50px;
+        padding: 10px;
+        background-color: white;
+        border: 1.5px solid rgb(114, 114, 114);
+        border-radius: 5px;
+
+        @media screen and (max-width: 1400px) {
+          width: 80%;
+          margin-top: 20px;
+        }
+
+        @media screen and (max-width: 650px) {
+          width: 100%;
+          margin-top: 20px;
+        }
+  
+        &:hover {
+          background-color: rgb(233, 233, 233);
+  
+        }
+      }
+    }
+  }
+  .businesses {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    @media screen and (max-width: 700px) {
+      flex-wrap: wrap;
+    }
+
+    .business-image {
+      height: 150px;
+      width: auto;
+      margin: 20px;
+
+    }
+    .building-three {
+      @media screen and (max-width: 700px) {
+        height: 200px;
+      }
+    }
+
+    .red-point {
+      height: 125px;
+    }
+  }
+}

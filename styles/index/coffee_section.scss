@@ -1,0 +1,37 @@
+.coffee-section {
+  background-image: url('/Screenshot_2017-11-01_20.16.42_4472x.jpg');
+  background-size: cover;
+  background-position-y: center;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 650px) {
+    background-position: right;
+  }
+
+}
+
+.coffee-section-overlay {
+  background: rgba(43, 50, 53, 0.6);
+  height: auto;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-section-text {
+  width: 40%;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  color: black;
+  text-align: center;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+  }
+}

@@ -1,0 +1,24 @@
+.sanitation-section {
+  height: auto;
+}
+
+.sanitation-section-text {
+  width: 40%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: black;
+  text-align: center;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+    margin-top: 120px;
+    
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}

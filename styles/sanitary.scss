@@ -1,0 +1,35 @@
+.how-sanitary-section {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+    margin-top: 120px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+    margin-top: 80px !important;
+    margin-bottom: 100px;
+  }
+
+  .how-sanitary-title {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 650px) {
+      font-size: 50px;
+    }
+  }
+
+  iframe {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+    }
+  }
+}

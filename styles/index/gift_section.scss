@@ -1,0 +1,36 @@
+.gift-section {
+  background-image: url('/bg-page-title-1.jpg');
+  background-size: cover;
+  background-position-y: top;
+  height: auto;
+
+  @media screen and (max-width: 650px) {
+    background-position: center;
+  }
+}
+
+.gift-section-overlay {
+  background: rgba(87, 96, 104, 0.6);
+  height: auto;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.gift-section-text {
+  width: 40%;
+  margin: auto;
+  color: black;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  @media screen and (max-width: 1000px) {
+    width: 75%;
+    margin-top: 120px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+  }
+}

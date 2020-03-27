@@ -1,0 +1,53 @@
+.footer {
+  background-image: url('/gog-footer.jpg');
+  background-position: center;
+  height: auto;
+
+  .footer-overlay {
+    background: rgba(55, 62, 70, 0.7);
+    height: auto;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-text {
+    color: white;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+    @media screen and (max-width: 1000px) {
+      width: 75%;
+    }
+  
+    @media screen and (max-width: 650px) {
+      width: 90%;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .footer-title {
+      margin-top: 30px;
+    }
+
+    .question {
+      font-size: 18px;
+    }
+
+    .copyright {
+      margin-top: 40px;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+      font-size: 50px;
+
+      a{
+        margin: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
