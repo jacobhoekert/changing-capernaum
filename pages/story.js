@@ -7,6 +7,8 @@ import TimelineSection from "../components/story/TimelineSection";
 import Footer from "../components/Footer";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import "react-vertical-timeline-component/style.min.css";
+
 
 const Story = () => {
   
