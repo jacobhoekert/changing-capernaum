@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Head from "next/head";
 import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
 
 const Contact = () => {
+
+  useEffect(() => {
+    config.autoAddCss = false;
+  }, [])
+
   return (
     <div>
       <Head>
