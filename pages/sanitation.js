@@ -5,7 +5,6 @@ import '../styles/global.scss';
 import '../styles/sanitary.scss';
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 
 const Sanitation = () => {

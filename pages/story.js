@@ -5,9 +5,7 @@ import WhoSection from "../components/story/WhoSection";
 import CapernaumSection from "../components/story/CapernaumSection";
 import TimelineSection from "../components/story/TimelineSection";
 import Footer from "../components/Footer";
-import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
-
 
 const Story = () => {
   

@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import '../styles/global.scss';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 
 const Contact = () => {
