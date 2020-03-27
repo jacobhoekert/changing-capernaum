@@ -8,7 +8,6 @@ import SanitationSection from "../components/index/SanitationSection";
 import GiftSection from "../components/index/GiftSection";
 import AnythingSection from "../components/index/AnythingSection";
 import Footer from "../components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.scss';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
