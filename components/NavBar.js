@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Collapse,
   Navbar,
@@ -12,10 +12,17 @@ import {
 } from "reactstrap";
 import Link from "next/link";
 import '../styles/nav_bar.scss';
+import { useSelector} from 'react-redux';
 
-const NavBar = () => {
+
+const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const globalState = useSelector(state => state);
+
+  useEffect(() => {
+    console.log(globalState);
+  }, [])
 
   return (
     <div>
@@ -43,7 +50,7 @@ const NavBar = () => {
             </NavItem>
           </Nav>
           <NavbarText className="d-block">
-            <Link href="/order"><Button className="d-block" color="primary">Order Now!</Button></Link>
+            <Link href={props.order ? "/cart" : "/order"}><Button className="d-block" color="primary">{props.order ? `View Cart [ ${globalState.order.totalCartQuantity} ]` : "Order Now!"}</Button></Link>
           </NavbarText>
         </Collapse>
       </Navbar>

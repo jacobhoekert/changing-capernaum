@@ -1,0 +1,108 @@
+.custom-request {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 200px;
+  margin-top: 30px;
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+
+  }
+  
+  p {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .gift-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+    }
+
+    .gift-text {
+      font-size: 20px;
+      width: 180px;
+      margin: 0px;
+      margin-right: 8px;
+    }
+  
+    input[type=checkbox] {
+      appearance: none;
+      border: 1px solid black;
+      width: auto;
+      padding: 50px;
+      transform: scale(1.5);
+      background-color: white;
+      margin: 0px;
+      border-radius: 10px;
+    }
+  }
+
+  
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+    }
+    
+  }
+
+  input, textarea{
+    transition-duration: 400ms;
+    border: 1px solid rgb(155, 155, 155);
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:focus{
+      outline: none !important;
+      background-color: rgb(218, 218, 218);
+    }
+  }
+
+  button {
+    background-color: rgb(92, 92, 92);
+    margin: auto;
+    width: 200px;
+    border: none;
+    display: block;
+    color: white;
+    padding: 10px;
+    height: 50px;
+
+    @media screen and (max-width: 650px) {
+      width: 50%;
+    }
+
+    p {
+      text-align: center;
+      margin: auto;
+    }
+
+  }
+
+  
+
+}

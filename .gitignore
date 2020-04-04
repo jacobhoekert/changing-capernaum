@@ -33,3 +33,4 @@ next.config.js
 email.config.js
 firebaseConfig.js
 .now
+stripeConfig.js

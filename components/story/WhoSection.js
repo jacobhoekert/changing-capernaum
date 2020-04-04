@@ -13,7 +13,7 @@ const WhoSection = () => {
             Nicaragua to learn Entrepreneurship and Web App Development. While
             in Nicaragua, we were called back to the United States due to the
             coronavirus. While we are burdened with everything happening, we see huge
-            oppurtunity for unifying our community and activating what we have
+            opportunity for unifying our community and activating what we have
             learned over this past year and aim to inspire others to also take action,
             love others, and come together to support each other, both families and
             local business owners. 

@@ -1,0 +1,50 @@
+.order-instructions {
+    background-image: url('/Screenshot_2017-11-01_20.16.42_4472x.jpg');
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: auto;
+
+  .order-instructions-overlay {
+    background: rgba(87, 96, 104, 0.6);
+    height: auto;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .order-instructions-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+
+    @media screen and (max-width: 1000px) {
+      width: 75%;
+      padding-top: 120px;
+    }
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+      padding-top: 50px !important;
+    }
+
+    .order-instructions-title {
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 650px) {
+        font-size: 35px;
+      }
+    }
+
+    .hours {
+      font-size: 35px;
+
+      @media screen and (max-width: 650px) {
+        font-size: 30px;
+      }
+    }
+  }
+}
+  

@@ -1,0 +1,43 @@
+.dropdown-wrapper {
+  width: 200px;
+  margin: auto;
+
+  @media screen and (max-width: 650px) {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .dropdown-header {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+
+    svg {
+      font-size: 23px;
+      padding-right: 10px;
+    } 
+    
+  }
+
+  .dropdown-list {
+    margin: 0px;
+    list-style: none;
+    padding-left: 0px; 
+
+    .dropdown-item {
+      border: 1px solid black;
+      border-top: none;
+      padding: 15px;
+      font-size: 15px;
+
+      &:hover {
+        background-color: rgb(194, 194, 194);
+        cursor: pointer;
+      }
+    }
+  }
+}

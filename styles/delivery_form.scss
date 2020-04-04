@@ -1,0 +1,219 @@
+.delivery {
+
+
+
+  h1 {
+    width: 40%;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+    }
+
+  }
+
+  .gift-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 650px) {
+      width: 90%;
+    }
+
+    .gift-text {
+      font-size: 20px;
+      width: 180px;
+      margin: 0px;
+      margin-right: 8px;
+    }
+  
+    input[type=checkbox] {
+      appearance: none;
+      border: 1px solid black;
+      width: auto;
+      padding: 50px;
+      transform: scale(1.5);
+      background-color: white;
+      margin: 0px;
+      border-radius: 10px;
+    }
+  }
+
+  #contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+  
+    @media screen and (max-width: 650px) {
+      padding-left: 0px;
+      padding-right: 0px;
+      width: 90%;
+      border-radius: 0px;;
+    }
+  
+    h1{
+      font-size: 40px;
+      color: #444;
+      margin-bottom: 20px;
+      margin-top: 6px;
+    }
+  
+    #description{
+      font-size: 1.2rem;
+      width: 80%;
+      text-align: center;
+      margin-top: 0px;
+      @media screen and (max-width: 980px) {
+        width: 80%;
+      }
+    }
+  
+    #questions{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+  
+      input, textarea{
+        transition-duration: 400ms;
+        border: 1px solid rgb(155, 155, 155);
+        padding: 12px;
+        font-size: 18px;
+  
+        &:focus{
+          outline: none !important;
+          background-color: rgb(218, 218, 218);
+        }
+      }
+
+      #recipient-name {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+  
+      #contact-email{
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      #phone-number{
+        width: 100%;
+        margin-top: 16px;
+      }
+  
+      #contact-message{
+        width: 100%;
+        margin-top: 16px;
+        height: 200px;
+        @media screen and (max-width: 650px) {
+          width: 100%;
+        }
+      }
+  
+      .short-fields{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+  
+        .short-input{
+          width: 48%;
+          transition-duration: 400ms;
+          border: 1px solid rgb(155, 155, 155);
+          padding: 12px;
+          font-size: 18px;
+  
+          &:focus{
+            outline: none !important;
+            box-shadow: 0px 4px 6px rgba($color: #000000, $alpha: 0.05);
+          }
+  
+          &:first-child{
+            margin-right: 20px;
+          }
+        }
+      }
+  
+      #address-line-1 {
+        width: 100%;
+        margin-top: 16px;
+      }
+  
+      #address-line-2 {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      #request-note {
+        width: 100%;
+        margin-top: 16px;
+      }
+  
+      #submit-row{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 16px;
+  
+        .display-message{
+          height: 0px;
+          overflow: visible;
+          font-size: 18px;
+          align-self: center;
+          margin-left: 10px;
+          font-family: 'Quicksand', sans-serif;
+  
+        }
+  
+        button{
+          padding: 0px;
+          border: 1px solid rgb(155, 155, 155);
+          border-radius: 4px;
+          cursor: pointer;
+          transition-duration: 200ms;
+          display: flex;
+          align-items: center;
+          
+  
+          &:hover{
+            background-color: rgb(155, 155, 155);
+            color: white;
+          }
+  
+          &:focus{
+            outline: none !important;
+          }
+  
+          p{
+            margin: 0px;
+            padding: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 18px;
+            color: #444;
+          }
+        }
+      }
+    }
+  }
+  h2{
+    font-size: 40px;
+    color: #444;
+    margin-bottom: 20px;
+    margin-top: 6px;
+  }
+}

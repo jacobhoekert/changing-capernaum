@@ -53,8 +53,8 @@ const Movement = () => {
         </p>
         <h2 className="display-4">#fortheCOS #peacebypiece</h2>
         <div className="movement-images">
-          <img width="300px" height="auto" alt="Instagram Post" className="posts" src="/CoffeeHEart.png"></img>
-          <img width="300px" height="auto" alt="Instagram Post" className="posts" src="/CoffeeCommunity.png"></img>
+          <img width="300px" height="300px" alt="Instagram Post" className="posts" src="/CoffeeHEart.png"></img>
+          <img width="300px" height="300px" alt="Instagram Post" className="posts" src="/CoffeeCommunity.png"></img>
         </div>
       </section>
       <Footer />
