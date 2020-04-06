@@ -14,16 +14,21 @@ const Product = (props) => {
   const [hasAddedToCart, setHasAddedToCart] = useState(false);
   const [isBeans, setIsBeans] = useState(false);
   const [details, setDetails] = useState("");
+  const [instructions, setInstructions] = useState("");
   const [hasCoffeeOptions, setHasCoffeeOptions] = useState(false);
   const [hasFoodOptions, setHasFoodOptions] = useState(false);
   const [amount, setAmount] = useState(0);
   const [checked, setChecked] = useState(0);
+  const [checked2, setChecked2] = useState(0);
   const [optionalChecked, setOptionalChecked] = useState([]);
   const [requiredOptions, setRequiredOptions] = useState([]);
   const [requiredDescriptions, setRequiredDescriptions] = useState([]);
+  const [requiredOptions2, setRequiredOptions2] = useState([]);
+  const [requiredDescriptions2, setRequiredDescriptions2] = useState([]);
   const [optionalOptions, setOptionalOptions] = useState([]);
   const [optionalDescriptions, setOptionalDescriptions] = useState([]);
   const [selectedRequiredOption, setSelectedRequiredOption] = useState({});
+  const [selectedRequired2Option, setSelectedRequired2Option] = useState({});
 
   const dispatch = useDispatch();
 
@@ -47,7 +52,12 @@ const Product = (props) => {
         if (product.requiredOptions != undefined) {
           setRequiredOptions(product.requiredOptions);
           setRequiredDescriptions(product.requiredDescriptions);
-          setChecked(product.requiredOptions[0]);
+          setChecked(0);
+        }
+        if (product.requiredOptions2 != undefined) {
+          setRequiredOptions2(product.requiredOptions2);
+          setRequiredDescriptions2(product.requiredDescriptions2);
+          setChecked2(0);
         }
         if (product.optionalOptions != undefined) {
           setOptionalOptions(product.optionalOptions);
@@ -83,11 +93,33 @@ const Product = (props) => {
       setAmount(value);
       setChecked(id);
       for (let i = 0; i < requiredOptions.length; i++) {
-        if (requiredOptions[i] == id) {
+        if (i == id) {
           description = requiredDescriptions[i];
         }
       }
       setSelectedRequiredOption(description);
+      setOptionalChecked({});
+    }
+  }
+
+  useEffect(() => {
+    console.log(selectedRequiredOption);
+  }, [selectedRequiredOption]);
+
+  const handleRequired2Check = (e) => {
+    const checked = e.target.checked;
+    const value = e.target.value;
+    const id = e.target.id;
+    let description = "";
+    if (checked) {
+      setAmount(value);
+      setChecked2(id);
+      for (let i = 0; i < requiredOptions2.length; i++) {
+        if (i == id) {
+          description = requiredDescriptions2[i];
+        }
+      }
+      setSelectedRequired2Option(description);
       setOptionalChecked({});
     }
   }
@@ -132,7 +164,9 @@ const Product = (props) => {
       quantity: quantity,
       beanGrind: beanGrindList[beanGrind],
       details: details,
+      specialInstructions: instructions,
       sizeOrSelection: selectedRequiredOption,
+      sizeOrSelection2: selectedRequired2Option,
       optionalAddons: selectedOptionalOptions
     }));
     dispatch(increaseTotalCartQuantity());
@@ -145,6 +179,11 @@ const Product = (props) => {
   const updateDetails = (e) => {
     const { value } = e.target;
     setDetails(value);
+  }
+
+  const updateInstructions = (e) => {
+    const { value } = e.target;
+    setInstructions(value);
   }
 
   return (
@@ -213,6 +252,17 @@ const Product = (props) => {
                                 <hr style={{borderTop: "1px solid #969696", width: "80%", marginTop: "0px"}}/>
                               </>
           }
+          { currentProduct.requiredOptions2 != undefined && <>
+                                <p style={{fontSize: "25px"}} className="options">Select Required Option</p>
+                                {requiredOptions2.map((price, index) => {
+                                  return <div className="checkbox-container">
+                                          <p className="checkbox-text">{requiredDescriptions2[index]}</p>
+                                          <input type="checkbox" value={price} id={index} name="prices" onChange={(e) => handleRequired2Check(e)} checked={checked2 == index}></input>
+                                        </div>
+                                })}
+                                <hr style={{borderTop: "1px solid #969696", width: "80%", marginTop: "0px"}}/>
+                              </>
+          }
           { currentProduct.optionalOptions != undefined && <>
                                 <p style={{fontSize: "25px"}} className="options">Add Optional Options</p>
                                 {optionalOptions.map((price, index) => {
@@ -221,17 +271,18 @@ const Product = (props) => {
                                           <input type="checkbox" id={index} value={price} name="prices" onChange={(e) => handleOptionalCheck(e)} checked={optionalChecked[index]}></input>
                                         </div>
                                 })}
-                                <textarea
-                                  rows="5"
-                                  id="contact-message"
-                                  name="details"
-                                  value={details}
-                                  onChange={e => updateDetails(e)}
-                                  placeholder="Special Instructions Here"
-                                ></textarea>
                                 <hr style={{borderTop: "1px solid #969696", width: "80%", marginTop: "30px"}}/>
                                 <p style={{fontSize: "25px"}} className="options">Total Price: {formatAmount(amount)} each</p>
                               </>
+          }
+          { currentProduct.specialInstructions != undefined && <textarea
+                                                                rows="5"
+                                                                id="contact-message"
+                                                                name="instructions"
+                                                                value={instructions}
+                                                                onChange={e => updateInstructions(e)}
+                                                                placeholder="Special Instructions Here"
+                                                              ></textarea>
           }
           <QuantitySelector 
             quantity={quantity}
