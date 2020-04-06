@@ -16,7 +16,7 @@
 
   }
 
-  .gift-question {
+  .checkbox-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
       width: 90%;
     }
 
-    .gift-text {
+    .checkbox-text {
       font-size: 20px;
       width: 180px;
       margin: 0px;
@@ -39,7 +39,6 @@
       appearance: none;
       border: 1px solid black;
       width: auto;
-      padding: 50px;
       transform: scale(1.5);
       background-color: white;
       margin: 0px;

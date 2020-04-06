@@ -8,6 +8,7 @@ import { useSelector} from "react-redux";
 import { db } from "../../firebaseConfig";
 import { Button } from "reactstrap";
 import Link from "next/link";
+import Firebase from 'firebase';
 
 const CustomRequest = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +41,6 @@ const CustomRequest = () => {
   const updateForm = e => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    console.log(form);
   };
 
   const handleSubmit = async () => {
@@ -52,6 +52,7 @@ const CustomRequest = () => {
     });
     try {
       let data = {
+        timestamp: Firebase.firestore.Timestamp.now(),
         customRequest: form,
       };
       const update = await db.collection("orders").add(data);

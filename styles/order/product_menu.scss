@@ -47,6 +47,39 @@
     }
   }
 
+  .menu-categories {
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 650px) {
+      flex-wrap: wrap;
+    }
+
+    .menu-category {
+      border: 1px solid black;
+      margin-right: 10px;
+      padding: 8px;
+      height: 40px;
+      border-radius: 6px;
+      cursor: pointer;
+
+      @media screen and (max-width: 650px) {
+        width: 40%;
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        background-color: rgb(173, 173, 173);
+      }
+    }
+
+    .selected-category {
+      background-color: rgb(173, 173, 173);
+    }
+  }
+
   .product-card-container {
     margin-left: 20px;
 

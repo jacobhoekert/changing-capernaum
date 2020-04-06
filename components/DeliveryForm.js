@@ -4,6 +4,7 @@ import { useDispatch, useSelector} from "react-redux";
 import "../styles/delivery_form.scss";
 import ClipLoader from "react-spinners/ClipLoader";
 import { db } from "../firebaseConfig";
+import Firebase from 'firebase';
 
 
 const DeliveryForm = () => {
@@ -40,7 +41,6 @@ const DeliveryForm = () => {
   const updateForm = e => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    console.log(form);
   };
 
   const buttonStyle = {
@@ -82,9 +82,9 @@ const DeliveryForm = () => {
     });
     try {
       let data = {
+        timestamp: Firebase.firestore.Timestamp.now(),
         delivery: form,
         product: globalState.order.order,
-        
       }
       const update = await db.collection("orders").add(data);
       console.log("Document Successfully written!");
@@ -105,8 +105,8 @@ const DeliveryForm = () => {
   return (
     <div className="delivery">
       <h1>Fill out the Delivery Details, then click on the "Checkout" button to move on to the Payment Form to Finish</h1>
-      <div className="gift-question">
-        <p className="gift-text"> Check box if it's a gift</p>
+      <div className="checkbox-container">
+        <p className="checkbox-text"> Check box if it's a gift</p>
         <input type="checkbox" id="isGift" name="isGift" onChange={(e) => handleCheck(e)}></input>
       </div>
       <form id="contact-form">

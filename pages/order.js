@@ -19,10 +19,10 @@ const Order = () => {
       <div className="order-instructions">
         <div className="order-instructions-overlay">
           <div className="order-instructions-text">
-            <h1 className="display-4 order-instructions-title">Order for Delivery</h1>
-            <h3 className="hours">CURRENT DELIVERY HOURS: 9:00 AM to 4:00 PM</h3>
+            <h1 className="display-4 order-instructions-title">Order Online for Delivery Below!</h1>
+            <h3 className="hours">CURRENT DELIVERY HOURS: M-F 9:00 AM to 4:00 PM.</h3>
             <p className="lead">
-              As of now, we have menu options from Building Three Coffee. We are currently adding more menus. You can also make a custom request for anything from anywhere you'd like!
+              As of now, we have menu options from Building Three Coffee and Cafe Red Point. We are currently adding more menus. You can also make a custom request for anything from anywhere you'd like! Remember you can give anything as a gift for someone else! Thanks for supporting local business and spreading joy amidst this time of chaos.
             </p>
             <hr />
           </div>

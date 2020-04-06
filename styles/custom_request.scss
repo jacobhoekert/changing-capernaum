@@ -45,15 +45,17 @@
       appearance: none;
       border: 1px solid black;
       width: auto;
-      padding: 50px;
       transform: scale(1.5);
       background-color: white;
       margin: 0px;
       border-radius: 10px;
+
+      @media screen and (max-width: 650px) {
+        transform: scale(1.1);
+        border-radius: 3px;
+      }
     }
   }
-
-  
 
   .fields {
     display: flex;

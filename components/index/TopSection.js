@@ -12,7 +12,11 @@ const TopSection = () => {
           <h1 className="display-3 title">
             Spreading Joy and Peace in Colorado Springs. Supporting families and small businesses through free local delivery.
           </h1>
-          <h2></h2>
+          <Link href="/order">
+            <Button className="button" color="primary">
+              Order Now!
+            </Button>
+          </Link>
           <p className="lead paragraph">
             We are a group of college students set out to love and unify our
             community through local business delivery. Our mission is to be a
@@ -24,12 +28,6 @@ const TopSection = () => {
             support and love your neighbor. Together, we truly believe we are{" "}
             <Link href="/story#capernaum-section">Changing Capernaum (click for definition).</Link>
           </p>
-          <Link href="/order">
-            <Button className="button" color="primary">
-              Order Now!
-            </Button>
-          </Link>
-          
         </div>
       </div>
     </section>

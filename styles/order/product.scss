@@ -156,6 +156,46 @@
 
       }
 
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    
+        @media screen and (max-width: 650px) {
+          width: 90%;
+        }
+    
+        .checkbox-text {
+          font-size: 20px;
+          width: 180px;
+          margin: 0px;
+          margin-right: 8px;
+          text-align: center;
+
+          @media screen and (max-width: 650px) {
+            width: 80%;
+            text-align: left;
+
+          }
+        }
+      
+        input[type=checkbox] {
+          appearance: none;
+          border: 1px solid black;
+          width: auto;
+          transform: scale(1.5);
+          background-color: white;
+          margin: 0px;
+          border-radius: 10px;
+
+          @media screen and (max-width: 650px) {
+          }
+        }
+      }
+
       .cart-button {
         border: none;
         background-color: rgb(110, 110, 110);
