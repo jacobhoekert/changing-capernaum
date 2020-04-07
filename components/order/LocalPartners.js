@@ -25,7 +25,11 @@ const LocalPartners = (props) => {
     {
       imgURL: "/ten-thousand-cookies-logo.png",
       name: "Ten Thousand Cookies"
-    }
+    },
+    {
+      imgURL: "/nighting.jpg",
+      name: "Nightingale Bread"
+    } 
   ];
 
   const buildingThreeMenu = [
@@ -286,23 +290,91 @@ const LocalPartners = (props) => {
   ];
 
   const nightingGaleMenu = [
-    {
-      company: "Nightingale Bread",
-      imgURL: "/buildingThreeMenu/ethiopia-natural-amaro.jpg",
-      name: "Ethiopia Natural Amaro",
-      description: "Process: Natural ~~~ Impressions: Syrupy, Coconut Sugar, Hawaiian Punch",
-      amount: 1900,
-      beanGrind: "Whole Bean"
-    },
-    {
-      company: "Nightingale Bread",
-      imgURL: "/buildingThreeMenu/ethiopia-natural-amaro.jpg",
-      name: "Guatemala Teanzul Natural",
-      description: "",
-      images: ["https://example.com/t-shirt.png"],
-      amount: 1800,
-      beanGrind: "Whole Bean"
-    }
+    [
+    "Standard Loaves",
+      [
+        {
+          company: "Nightingale Bread",
+          name: "Blonde",
+          description: "One third fresh-milled whole grain flour, two thirds white bread flour.",
+          amount: 800,
+          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
+          requiredOptions: [800, 400]
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Red",
+          description: "Fresh milled red wheat from the San Luis Valley, some of it slightly sifted, with a little rye and spelt",
+          amount: 800,
+          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
+          requiredOptions: [800, 400]
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Seeded Rustic",
+          description: "As above, but with organic sunflower, flax, sesame, pumpkin, oat, and poppy seeds.",
+          amount: 800,
+          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
+          requiredOptions: [800, 400]
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Spelt",
+          description: "All fresh-milled whole spelt flour.",
+          amount: 800,
+          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
+          requiredOptions: [800, 400]
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Daily Special",
+          description: "Rotates daily. Contact us for details!",
+          amount: 800,
+          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
+          requiredOptions: [800, 400]
+        },
+      ]
+    ],
+    [
+      "Yeasted Loaves",
+      [
+        {
+          company: "Nightingale Bread",
+          name: "Baguette",
+          description: "The iconic French loaf.",
+          amount: 400
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Ciabatta Rolls",
+          description: "Crusty, fist-sized rolls with a tender crumb.",
+          amount: 200
+        }
+      ]
+    ],
+    [
+    "Nordic Loaves",
+      [
+        {
+          company: "Nightingale Bread",
+          name: "Rye",
+          description: "All fresh-milled whole rye flour.",
+          amount: 800
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Sprouted Rye",
+          description: "Fresh-milled whole rye and spelt flour. Packed with flax, sesame, sunflower, pumpkin, and sprouted rye berries.",
+          amount: 800
+        },
+        {
+          company: "Nightingale Bread",
+          name: "Backcountry",
+          description: "As above, but with dried apricot, cranberry, raisin, date, toasted walnut, and Lockhart honey.",
+          amount: 1000
+        }
+      ]
+    ]
   ];
 
   const redPointCafeMenu = [
@@ -879,8 +951,13 @@ const LocalPartners = (props) => {
         break;
       case "Ola Juice Bar":
         setSelectedList(olaJuiceBarMenu);
+        break;
       case "Ten Thousand Cookies":
         setSelectedList(tenThousandCookiesMenu);
+        break;
+      case "Nightingale Bread":
+        setSelectedList(nightingGaleMenu);
+        break;
       default:
         return 0;
     }
@@ -910,11 +987,17 @@ const LocalPartners = (props) => {
               return (
                 <div onClick={handleClick} className="image-name-card">
                   <img src={partner.imgURL} />
-                  <h3 className="image-name-card-name">{partner.name == "Nightingale Bread" ? partner.name + " CLOSED UNTIL APRIL 6th" : partner.name}</h3>
+                  <h3 className="image-name-card-name">{partner.name}</h3>
                 </div>
               );
             })}
           </div>
+          <h1 style={{textAlign: "center"}}> OR </h1>
+          <h2 style={{textAlign: "center"}}>Call us at (719) 964-8627 to place an order</h2>
+          <p className="phone-description">
+          Request anything, from anyplace, and we'll deliver to you! You can pay
+          after we deliver (in cash, Venmo, or we have a credit card reader)! After you Submit, we will deliver your order.
+          </p>
           <h1 style={{textAlign: "center"}}> OR </h1>
           <CustomRequest />
         </>

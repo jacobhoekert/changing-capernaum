@@ -89,7 +89,6 @@ const DeliveryForm = () => {
       const update = await db.collection("orders").add(data);
       console.log("Document Successfully written!");
       setIsLoading(false);
-      console.log(sessionId)
       stripe
         .redirectToCheckout({
           sessionId: sessionId

@@ -49,8 +49,10 @@ const PartnerSection = () => {
           We will be delivering products from some of Colorado Springs' favorite
           places! Right now, we deliver from our friends at{" "}
           <a href="https://www.building3coffee.com/">Building Three Coffee</a>,{" "}
-          <a href="https://www.nightingalebread.com/">Nightingale Bread</a>, and{" "}
-          <a href="https://caferedpoint.com/">Cafe Red Point! </a>
+          <a href="https://www.nightingalebread.com/">Nightingale Bread</a>,{" "}
+          <a href="https://caferedpoint.com/">Cafe Red Point</a>,{" "}
+          <a href="https://www.olajuicebar.com/">Ola Juice Bar</a>,{" "}and{" "}
+          <a href="https://www.tenthousandcookies.com/">Ten Thousand Cookies!{" "}</a>
           Stuck at home and want quality locally roasted coffee, organic bread,
           pastries, or refreshing smoothies? We want to expand to any and every
           small local business <em>that you love.</em> In fact, send us
@@ -104,9 +106,23 @@ const PartnerSection = () => {
         </a>
         <a href="https://caferedpoint.com/">
           <img
-            className="business-image red-point"
+            className="business-image"
             src="/red-point-logo.png"
             alt="red point logo"
+          ></img>
+        </a>
+        <a href="https://www.olajuicebar.com/">
+          <img
+            className="business-image"
+            src="/ola-juice-bar-logo.png"
+            alt="ola juice bar logo"
+          ></img>
+        </a>
+        <a href="https://www.tenthousandcookies.com/">
+          <img
+            className="business-image"
+            src="/ten-thousand-cookies-logo.png"
+            alt="ten thousand cookies logo"
           ></img>
         </a>
       </div>

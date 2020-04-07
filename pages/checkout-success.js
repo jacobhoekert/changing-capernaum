@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import Head from "next/head";
 import '../styles/checkout_success.scss';
 import NavBar from '../components/NavBar';
-
+import Link from "next/link";
+import {Button} from "reactstrap";
 const CheckoutSuccess = () => {
 
   return (

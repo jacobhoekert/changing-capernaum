@@ -68,4 +68,30 @@
       margin-left: 40px;
     }
   }
+  
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 30px;
+
+  @media screen and (max-width: 650px) {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+
+  }
+
+}
+
+.phone-description {
+  margin: auto;
+  margin-top: 20px;
+  width: 35%;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 650px) {
+    width: 80%;
+  }
 }
