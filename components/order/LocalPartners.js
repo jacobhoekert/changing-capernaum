@@ -21,6 +21,10 @@ const LocalPartners = (props) => {
     {
       imgURL: "/ola-juice-bar-logo.png",
       name: "Ola Juice Bar"
+    },
+    {
+      imgURL: "/ten-thousand-cookies-logo.png",
+      name: "Ten Thousand Cookies"
     }
   ];
 
@@ -815,6 +819,49 @@ const LocalPartners = (props) => {
     ],
   ]
 
+  const tenThousandCookiesMenu = [
+    [
+      "Cookies!",
+      [
+        {
+          company: "Ten Thousand Cookies",
+          imgURL: "/tenThousandCookiesMenu/cookie-crate.png",
+          name: "The Cookie Crate",
+          description: "A mix of our best sellers ~~~ 4 monster cookies (peanut butter, oats, chocolate, and sprinkles) 4 chocolate chip (so soft and delicious we swear you won't miss the dairy and gluten) 4 iced sugar cookies with rainbow sprinkles!",
+          amount: 3000,
+        },
+        {
+          company: "Ten Thousand Cookies",
+          name: "1/2 Cookie Crate",
+          imgURL: "/tenThousandCookiesMenu/cookie-crate.png",
+          description: "The ultimate comfort food: 1 dozen gluten free & vegan monster cookies made with peanut butter, oats, LOTS of chocolate, and sprinkles (obviously)!",
+          amount: 1700,
+        },
+        {
+          company: "Ten Thousand Cookies",
+          name: "Monster Cookie Crate",
+          imgURL: "/tenThousandCookiesMenu/monster-cookies.jpg",
+          description: "The ultimate comfort food: 1 dozen gluten free & vegan monster cookies made with peanut butter, oats, LOTS of chocolate, and sprinkles (obviously)!",
+          amount: 2300,
+        },
+        {
+          company: "Ten Thousand Cookies",
+          name: "1/2 Monster Cookie Crate",
+          imgURL: "/tenThousandCookiesMenu/monster-cookies.jpg",
+          description: "cold-pressed ginger root",
+          amount: 1300,
+        },
+        {
+          company: "Ten Thousand Cookies",
+          name: "DIY Cookie Decorating Kit",
+          imgURL: "/tenThousandCookiesMenu/diy-kit.jpeg",
+          description: "Decorate your own awesome cookies...with out the baking mess. Our kits come with: 12 gluten free sugar cookies in fun shapes, 3-4 colors of premade decorating icing, sprinkles, toothpick for spreading + instructions!",
+          amount: 3100,
+        },
+      ]
+    ],
+  ]
+
   const handleClick = e => {
     const selectedPartnerName = e.target.innerText;
     setIsPartnerSelected(true);
@@ -832,6 +879,8 @@ const LocalPartners = (props) => {
         break;
       case "Ola Juice Bar":
         setSelectedList(olaJuiceBarMenu);
+      case "Ten Thousand Cookies":
+        setSelectedList(tenThousandCookiesMenu);
       default:
         return 0;
     }
