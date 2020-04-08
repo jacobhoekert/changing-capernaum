@@ -15,8 +15,6 @@ const Product = (props) => {
   const [isBeans, setIsBeans] = useState(false);
   const [details, setDetails] = useState("");
   const [instructions, setInstructions] = useState("");
-  const [hasCoffeeOptions, setHasCoffeeOptions] = useState(false);
-  const [hasFoodOptions, setHasFoodOptions] = useState(false);
   const [amount, setAmount] = useState(0);
   const [checked, setChecked] = useState(0);
   const [checked2, setChecked2] = useState(0);
@@ -42,12 +40,6 @@ const Product = (props) => {
         setCurrentProduct(product);
         if (product.beanGrind) {
           setIsBeans(true);
-        }
-        if (product.coffeeOptions != undefined) {
-          setHasCoffeeOptions(true);
-        }
-        if (product.foodOptions != undefined) {
-          setHasFoodOptions(true);
         }
         if (product.requiredOptions != undefined) {
           setRequiredOptions(product.requiredOptions);
@@ -208,38 +200,6 @@ const Product = (props) => {
                             setSelectedItem={setBeanGrind}
                           />
                         </>
-          }
-          { hasCoffeeOptions && <>
-                            <p className="options">Other Milk Options (+ $0.60 each): Almond, Coco, Breve, Oat</p>
-                            <p className="options">Syrup Options (+ $0.60 each): Vanilla, Honey, Matcha, Butterscotch, Lavender honey, Rosemary Rooibus </p>
-                            <p className="options">Extra Shots (+ $0.60 each)</p>
-                            <hr style={{borderTop: "1px solid #969696", width: "80%", marginTop: "0px"}}/>
-                            <p className="details-label">Specify Details (specify if iced, any options, extra shots, whip, etc.</p>
-                            <textarea
-                              rows="5"
-                              id="contact-message"
-                              name="details"
-                              value={details}
-                              onChange={e => updateDetails(e)}
-                              placeholder="Specify Details Here"
-                            ></textarea>
-                            <p className="additional-message">At this time, additional options costs will need to be accepted after we deliver with cash or Venmo</p>
-                          </>
-          }
-          { hasFoodOptions && <>
-                            <p className="options">Options</p>
-                            <p className="options">{currentProduct.foodOptions}</p>
-                            <hr style={{borderTop: "1px solid #969696", width: "80%", marginTop: "0px"}}/>
-                            <p className="details-label">Enter which option and specify details</p>
-                            <textarea
-                              rows="5"
-                              id="contact-message"
-                              name="details"
-                              value={details}
-                              onChange={e => updateDetails(e)}
-                              placeholder="Specify Option/details Here"
-                            ></textarea>
-                          </>
           }
           { currentProduct.requiredOptions != undefined && <>
                                 <p style={{fontSize: "25px"}} className="options">Select Required Option</p>

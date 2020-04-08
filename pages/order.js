@@ -22,7 +22,7 @@ const Order = () => {
             <h1 className="display-4 order-instructions-title">Order Online for Delivery Below!</h1>
             <h3 className="hours">CURRENT DELIVERY HOURS: M-F 9:00 AM to 4:00 PM.</h3>
             <p className="lead">
-              As of now, we have menu options from Building Three Coffee and Cafe Red Point. We are currently adding more menus. You can also make a custom request for anything from anywhere you'd like! Remember you can give anything as a gift for someone else! Thanks for supporting local business and spreading joy amidst this time of chaos.
+              We are constantly adding more local businesses! You can also make a custom request for anything from anywhere you'd like! Remember you can give anything as a gift for someone else! Thanks for supporting local business and spreading joy amidst this time of chaos.
             </p>
             <hr />
           </div>

@@ -29,6 +29,10 @@ const LocalPartners = (props) => {
     {
       imgURL: "/nighting.jpg",
       name: "Nightingale Bread"
+    },
+    {
+      imgURL: "/blank-coffee.jpg",
+      name: "Blank Coffee | Food"
     } 
   ];
 
@@ -70,7 +74,9 @@ const LocalPartners = (props) => {
           name: "Latte",
           description: "Double shot w/ steamed milk",
           amount: 425,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -78,7 +84,9 @@ const LocalPartners = (props) => {
           name: "Mocha",
           description: "Double shot w/ steamed milk + chocolate",
           amount: 425,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -100,7 +108,9 @@ const LocalPartners = (props) => {
           name: "Cappuccino",
           description: "Double shot w/ steamed milk + froth",
           amount: 350,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -108,7 +118,9 @@ const LocalPartners = (props) => {
           name: "Cold Brew",
           description: "",
           amount: 400,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -116,7 +128,9 @@ const LocalPartners = (props) => {
           name: "Nitro",
           description: "Nitrogen infused cold brew",
           amount: 400,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -124,7 +138,9 @@ const LocalPartners = (props) => {
           name: "Hot Chocolate",
           description: "",
           amount: 300,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -132,7 +148,9 @@ const LocalPartners = (props) => {
           name: "Chai",
           description: "",
           amount: 400,
-          coffeeOptions: ""
+          optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
+          optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -159,15 +177,18 @@ const LocalPartners = (props) => {
           name: "Pastries",
           description: "All of our pastries are made on site by Snowberry Bakehouse. We have a large variety of vegan and gluten free options that are delicious!",
           amount: 350,
-          foodOptions: "Lemon Poppy Seed Muffin (v, gf), Chocolate Chip Cookie (v, gf), Almond Rasberry Fanancier (v, gf), Rasberry Oat Bar (gf), Scone"
+          requiredDescriptions: ["Lemon Poppy Seed Muffin (v, gf)", "Chocolate Chip Cookie (v, gf)", "Almond Rasberry Fanancier (v, gf)", "Rasberry Oat Bar (gf)", "Scone"],
+          requiredOptions: [350, 350, 350, 350, 350],
         },
         {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-pastypie.jpeg",
           name: "Pasty Pie",
-          description: "Our pasty pies are made by the Pasty Company. We have 3 options that are all great and a good tummy filler. There is a vegan option which is the springs.",
+          description: "Our pasty pies are made by the Pasty Company. We have 3 options that are all great and a good tummy filler. There is a vegan option (The Springs)",
           amount: 700,
-          foodOptions: "The Capitol, The Springs, Fruit"
+          requiredDescriptions: ["The Capitol", "The Springs", "Fruit"],
+          requiredOptions: [700, 700, 700],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -175,7 +196,11 @@ const LocalPartners = (props) => {
           name: "Quiche",
           description: "",
           amount: 350,
-          foodOptions: "Veggie (Green Chili and Cheese), Meat - Lorraine Bacon & Shallot, Blueberries optional"
+          requiredDescriptions: ["Veggie (Green Chili and Cheese)", "Meat (Lorraine Bacon & Shallot)"],
+          requiredOptions: [350, 350],
+          optionalDescriptions: ["Blueberries"],
+          optionalOptions: [0],
+          specialInstructions: ""
         },
         {
           company: "Building Three Coffee",
@@ -183,7 +208,11 @@ const LocalPartners = (props) => {
           name: "Bagel & Cream Cheese",
           description: "",
           amount: 325,
-          foodOptions: "Types: Plain, Jalapeño, Blueberry, Everything, Cinnamon Raisin | Options: Cream Cheese, Butter, Toasted"
+          requiredDescriptions: ["Plain", "Jalapeño", "Blueberry", "Everything", "Cinammon Raisin"],
+          requiredOptions: [325, 325, 325, 325, 325],
+          optionalDescriptions: ["Cream Cheese, Butter, Toast the Bagel"],
+          optionalOptions: [0, 0, 0],
+          specialInstructions: "",
         },
         {
           company: "Building Three Coffee",
@@ -191,7 +220,9 @@ const LocalPartners = (props) => {
           name: "Granola + Milk",
           description: "",
           amount: 400,
-          foodOptions: "Milk: Normal, Almond, Coconut, Oat, Breve"
+          requiredDescriptions: ["Regular Milk", "Almond Milk", "Coconut Milk", "Oat Milk", "Breve"],
+          requiredOptions: [400, 400, 400, 400, 400],
+          specialInstructions: "",
         },
         {
           company: "Building Three Coffee",
@@ -934,6 +965,168 @@ const LocalPartners = (props) => {
     ],
   ]
 
+  const blankCoffeeMenu = [
+    [
+      "Coffee & Tea",
+      [
+        {
+          company: "Blank Coffee | Food",
+          name: "Drip Coffee",
+          amount: 325,
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Espresso",
+          amount: 325,
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Americano",
+          amount: 325,
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Macchiatto",
+          amount: 375,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Cortado",
+          amount: 375,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Cortado",
+          amount: 375,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Cappuccino",
+          amount: 425,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Latte",
+          amount: 475,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Mocha",
+          amount: 525,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Chai Latte",
+          amount: 475,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Matcha Latte",
+          amount: 525,
+          optionalDescriptions: ["Almond Milk ($0.50)", "Oat Milk ($0.50)"],
+          optionalOptions: [50, 50],
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Loose Leaf Tea",
+          amount: 375,
+          requiredDescriptions: ["White", "Green", "Oolong", "Black"],
+          requiredOptions: [375, 375, 375, 375],
+          specialInstructions: ""
+        },
+      ]
+    ],
+    [
+      "Pastries",
+      [
+        {
+          company: "Blank Coffee | Food",
+          name: "Ham + Cheese Kolache",
+          amount: 475,
+          description: "a sweet filled bread w/ capicola & gruyere",
+          specialInstructions: ""
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Roasted Root Kolache",
+          amount: 475,
+          description: "a sweet filled bread w/ our roasted root spread pepitas, & greens",
+          specialInstructions: ""
+        },
+      ]
+    ],
+    [
+      "Donuts",
+      [
+        {
+          company: "Blank Coffee | Food",
+          name: "Cinnamon Sugar",
+          amount: 225,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Vanilla Glaze",
+          amount: 225,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Fruit Glaze",
+          amount: 225,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Chocolate Glaze",
+          amount: 225,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Cheese + Fruit",
+          amount: 450,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Pastry Cream",
+          amount: 450,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Vegan Glaze",
+          amount: 325,
+        },
+        {
+          company: "Blank Coffee | Food",
+          name: "Vegan Filled",
+          amount: 425,
+        },
+      ]
+    ]
+  ]
+
   const handleClick = e => {
     const selectedPartnerName = e.target.innerText;
     setIsPartnerSelected(true);
@@ -957,6 +1150,9 @@ const LocalPartners = (props) => {
         break;
       case "Nightingale Bread":
         setSelectedList(nightingGaleMenu);
+        break;
+      case "Blank Coffee | Food":
+        setSelectedList(blankCoffeeMenu);
         break;
       default:
         return 0;
