@@ -1,0 +1,117 @@
+Date : 2020-05-15 18:50:10
+Directory : /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum
+Total : 73 files,  17916 codes, 4 comments, 562 blanks, all 18482 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          4 |     13,167 |          0 |          4 |     13,171 |
+| JavaScript |         40 |      3,209 |          4 |        213 |      3,426 |
+| SCSS       |         27 |      1,512 |          0 |        331 |      1,843 |
+| Markdown   |          1 |         18 |          0 |         13 |         31 |
+| XML        |          1 |         10 |          0 |          1 |         11 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                          |         73 |     17,916 |          4 |        562 |     18,482 |
+| components                                                                                                 |         24 |      2,702 |          0 |        141 |      2,843 |
+| components/cart                                                                                            |          1 |         41 |          0 |          4 |         45 |
+| components/index                                                                                           |          6 |        272 |          0 |         22 |        294 |
+| components/order                                                                                           |          9 |      1,794 |          0 |         72 |      1,866 |
+| components/story                                                                                           |          3 |        158 |          0 |          9 |        167 |
+| pages                                                                                                      |         12 |        442 |          4 |         59 |        505 |
+| pages/api                                                                                                  |          2 |         60 |          0 |          9 |         69 |
+| public                                                                                                     |          1 |         10 |          0 |          1 |         11 |
+| redux                                                                                                      |          4 |         65 |          0 |         13 |         78 |
+| redux/actions                                                                                              |          1 |         20 |          0 |          3 |         23 |
+| redux/reducers                                                                                             |          2 |         33 |          0 |          6 |         39 |
+| styles                                                                                                     |         27 |      1,512 |          0 |        331 |      1,843 |
+| styles/cart                                                                                                |          1 |         22 |          0 |          4 |         26 |
+| styles/index                                                                                               |          6 |        281 |          0 |         66 |        347 |
+| styles/order                                                                                               |          6 |        453 |          0 |        109 |        562 |
+| styles/story                                                                                               |          3 |         61 |          0 |         10 |         71 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                   | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/README.md                             | Markdown   |         18 |          0 |         13 |         31 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/ContactForm.js             | JavaScript |        114 |          0 |          8 |        122 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/DeliveryForm.js            | JavaScript |        190 |          0 |         12 |        202 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/DropDownMenu.js            | JavaScript |         36 |          0 |          5 |         41 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/Footer.js                  | JavaScript |         41 |          0 |          3 |         44 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/NavBar.js                  | JavaScript |         56 |          0 |          6 |         62 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/cart/ConfirmCart.js        | JavaScript |         41 |          0 |          4 |         45 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/AnythingSection.js   | JavaScript |         26 |          0 |          3 |         29 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/CoffeeSection.js     | JavaScript |         32 |          0 |          3 |         35 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/GiftSection.js       | JavaScript |         27 |          0 |          3 |         30 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/PartnerSection.js    | JavaScript |        127 |          0 |          7 |        134 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/SanitationSection.js | JavaScript |         25 |          0 |          3 |         28 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/index/TopSection.js        | JavaScript |         35 |          0 |          3 |         38 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/CartBanner.js        | JavaScript |         16 |          0 |          4 |         20 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/Checkout.js          | JavaScript |         45 |          0 |          7 |         52 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/CustomRequest.js     | JavaScript |        175 |          0 |         10 |        185 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/LocalPartners.js     | JavaScript |      1,108 |          0 |         13 |      1,121 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/OrderInstructions.js | JavaScript |         27 |          0 |          3 |         30 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/OrderNavBar.js       | JavaScript |         75 |          0 |          4 |         79 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/Product.js           | JavaScript |        246 |          0 |         18 |        264 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/ProductMenu.js       | JavaScript |         87 |          0 |         10 |         97 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/order/QuantitySelector.js  | JavaScript |         15 |          0 |          3 |         18 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/story/CapernaumSection.js  | JavaScript |         22 |          0 |          3 |         25 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/story/TimelineSection.js   | JavaScript |        111 |          0 |          3 |        114 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/components/story/WhoSection.js        | JavaScript |         25 |          0 |          3 |         28 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/firebase.json                         | JSON       |          6 |          0 |          1 |          7 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/firestore.indexes.json                | JSON       |          4 |          0 |          1 |          5 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/package-lock.json                     | JSON       |     13,117 |          0 |          1 |     13,118 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/package.json                          | JSON       |         40 |          0 |          1 |         41 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/_app.js                         | JavaScript |         30 |          4 |          9 |         43 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/api/build-checkout.js           | JavaScript |         18 |          0 |          3 |         21 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/api/sendMail.js                 | JavaScript |         42 |          0 |          6 |         48 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/cart.js                         | JavaScript |         44 |          0 |          4 |         48 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/checkout-cancel.js              | JavaScript |         18 |          0 |          4 |         22 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/checkout-success.js             | JavaScript |         21 |          0 |          3 |         24 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/contact.js                      | JavaScript |         25 |          0 |          5 |         30 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/index.js                        | JavaScript |         41 |          0 |          5 |         46 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/movement.js                     | JavaScript |         60 |          0 |          6 |         66 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/order.js                        | JavaScript |         37 |          0 |          4 |         41 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/sanitation.js                   | JavaScript |         77 |          0 |          5 |         82 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/pages/story.js                        | JavaScript |         29 |          0 |          5 |         34 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/public/zeit.svg                       | XML        |         10 |          0 |          1 |         11 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/redux/actions/orderActions.js         | JavaScript |         20 |          0 |          3 |         23 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/redux/reducers/orderReducer.js        | JavaScript |         27 |          0 |          4 |         31 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/redux/reducers/rootReducer.js         | JavaScript |          6 |          0 |          2 |          8 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/redux/store.js                        | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/cart/confirm_cart.scss         | SCSS       |         22 |          0 |          4 |         26 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/cart_banner.scss               | SCSS       |         15 |          0 |          2 |         17 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/checkout_success.scss          | SCSS       |         15 |          0 |          3 |         18 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/contact_form.scss              | SCSS       |        154 |          0 |         28 |        182 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/custom_request.scss            | SCSS       |         89 |          0 |         21 |        110 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/delivery_form.scss             | SCSS       |        183 |          0 |         36 |        219 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/drop_down_menu.scss            | SCSS       |         36 |          0 |          7 |         43 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/footer.scss                    | SCSS       |         44 |          0 |          9 |         53 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/global.scss                    | SCSS       |         33 |          0 |          5 |         38 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/anything_section.scss    | SCSS       |         20 |          0 |          3 |         23 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/coffee_section.scss      | SCSS       |         31 |          0 |          6 |         37 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/gift_section.scss        | SCSS       |         31 |          0 |          5 |         36 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/partner_section.scss     | SCSS       |        125 |          0 |         35 |        160 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/sanitation_section.scss  | SCSS       |         20 |          0 |          4 |         24 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/index/top_section.scss         | SCSS       |         54 |          0 |         13 |         67 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/movement.scss                  | SCSS       |         58 |          0 |         14 |         72 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/nav_bar.scss                   | SCSS       |         39 |          0 |         11 |         50 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/local_partners.scss      | SCSS       |         78 |          0 |         19 |         97 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/order_instructions.scss  | SCSS       |         41 |          0 |          9 |         50 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/order_nav_bar.scss       | SCSS       |          6 |          0 |          0 |          6 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/product.scss             | SCSS       |        178 |          0 |         40 |        218 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/product_menu.scss        | SCSS       |        105 |          0 |         28 |        133 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/order/quantity_selector.scss   | SCSS       |         45 |          0 |         13 |         58 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/sanitary.scss                  | SCSS       |         29 |          0 |          6 |         35 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/story/capernaum_section.scss   | SCSS       |         21 |          0 |          4 |         25 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/story/timeline_section.scss    | SCSS       |          8 |          0 |          2 |         10 |
+| /Users/jacobhoekert/programming/ChangingCapernaum/changing-capernaum/styles/story/who_section.scss         | SCSS       |         32 |          0 |          4 |         36 |
+| Total                                                                                                      |            |     17,916 |          4 |        562 |     18,482 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

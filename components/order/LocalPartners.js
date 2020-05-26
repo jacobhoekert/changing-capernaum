@@ -27,10 +27,6 @@ const LocalPartners = (props) => {
       name: "Ten Thousand Cookies"
     },
     {
-      imgURL: "/nighting.jpg",
-      name: "Nightingale Bread"
-    },
-    {
       imgURL: "/blank-coffee.jpg",
       name: "Blank Coffee | Food"
     } 
@@ -72,7 +68,7 @@ const LocalPartners = (props) => {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-latte.png",
           name: "Latte",
-          description: "Double shot w/ steamed milk",
+          description: "Double shot w/ steamed milk (specify if iced in 'special instructions'",
           amount: 425,
           optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
           optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
@@ -82,7 +78,7 @@ const LocalPartners = (props) => {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-latte.png",
           name: "Mocha",
-          description: "Double shot w/ steamed milk + chocolate",
+          description: "Double shot w/ steamed milk + chocolate (specify if iced in 'special instructions'",
           amount: 425,
           optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
           optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
@@ -92,21 +88,21 @@ const LocalPartners = (props) => {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-espresso.jpeg",
           name: "Macchiato",
-          description: "Double shot w/ dollop of steamed milk",
+          description: "Double shot w/ dollop of steamed milk (specify if iced in 'special instructions'",
           amount: 300,
         },
         {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-espresso.jpeg",
           name: "Cortado",
-          description: "Double shot w/ steamed milk",
+          description: "Double shot w/ steamed milk (specify if iced in 'special instructions'",
           amount: 300,
         },
         {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-cappuccino.jpeg",
           name: "Cappuccino",
-          description: "Double shot w/ steamed milk + froth",
+          description: "Double shot w/ steamed milk + froth (specify if iced in 'special instructions'",
           amount: 350,
           optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
           optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
@@ -146,7 +142,7 @@ const LocalPartners = (props) => {
           company: "Building Three Coffee",
           imgURL: "/buildingThreeMenu/b3-chai.jpg",
           name: "Chai",
-          description: "",
+          description: "specify if iced in 'special instructions'",
           amount: 400,
           optionalDescriptions: ["Almond Milk ($0.60)", "Coco Milk ($0.60)", "Breve ($0.60)", "Oat Milk ($0.60)", "Vanilla Syrup ($0.60)", "Honey Syrup ($0.60)", "Matcha Syrup ($0.60)", "Vanilla Syrup ($0.60)", "Butterscotch Syrup ($0.60)", "Lavender Honey Syrup ($0.60)", "Rosemary Rooibus Syrup ($0.60)", "Extra Espresso Shot ($0.60)", "Extra Espresso Shot ($0.60)"],
           optionalOptions: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
@@ -316,94 +312,6 @@ const LocalPartners = (props) => {
           description: "60 Count",
           amount: 700,
         },
-      ]
-    ]
-  ];
-
-  const nightingGaleMenu = [
-    [
-    "Standard Loaves",
-      [
-        {
-          company: "Nightingale Bread",
-          name: "Blonde",
-          description: "One third fresh-milled whole grain flour, two thirds white bread flour.",
-          amount: 800,
-          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
-          requiredOptions: [800, 400]
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Red",
-          description: "Fresh milled red wheat from the San Luis Valley, some of it slightly sifted, with a little rye and spelt",
-          amount: 800,
-          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
-          requiredOptions: [800, 400]
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Seeded Rustic",
-          description: "As above, but with organic sunflower, flax, sesame, pumpkin, oat, and poppy seeds.",
-          amount: 800,
-          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
-          requiredOptions: [800, 400]
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Spelt",
-          description: "All fresh-milled whole spelt flour.",
-          amount: 800,
-          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
-          requiredOptions: [800, 400]
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Daily Special",
-          description: "Rotates daily. Contact us for details!",
-          amount: 800,
-          requiredDescriptions: ["Whole ( $8.00 )", "Half ( $4.00 )"],
-          requiredOptions: [800, 400]
-        },
-      ]
-    ],
-    [
-      "Yeasted Loaves",
-      [
-        {
-          company: "Nightingale Bread",
-          name: "Baguette",
-          description: "The iconic French loaf.",
-          amount: 400
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Ciabatta Rolls",
-          description: "Crusty, fist-sized rolls with a tender crumb.",
-          amount: 200
-        }
-      ]
-    ],
-    [
-    "Nordic Loaves",
-      [
-        {
-          company: "Nightingale Bread",
-          name: "Rye",
-          description: "All fresh-milled whole rye flour.",
-          amount: 800
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Sprouted Rye",
-          description: "Fresh-milled whole rye and spelt flour. Packed with flax, sesame, sunflower, pumpkin, and sprouted rye berries.",
-          amount: 800
-        },
-        {
-          company: "Nightingale Bread",
-          name: "Backcountry",
-          description: "As above, but with dried apricot, cranberry, raisin, date, toasted walnut, and Lockhart honey.",
-          amount: 1000
-        }
       ]
     ]
   ];
@@ -1147,9 +1055,6 @@ const LocalPartners = (props) => {
         break;
       case "Ten Thousand Cookies":
         setSelectedList(tenThousandCookiesMenu);
-        break;
-      case "Nightingale Bread":
-        setSelectedList(nightingGaleMenu);
         break;
       case "Blank Coffee | Food":
         setSelectedList(blankCoffeeMenu);

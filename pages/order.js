@@ -19,10 +19,11 @@ const Order = () => {
       <div className="order-instructions">
         <div className="order-instructions-overlay">
           <div className="order-instructions-text">
-            <h1 className="display-4 order-instructions-title">Order Online for Delivery Below!</h1>
-            <h3 className="hours">CURRENT DELIVERY HOURS: M-F 9:00 AM to 4:00 PM.</h3>
+            <h1 className="display-4 order-instructions-title">We are done with delivery, sadly.</h1>
             <p className="lead">
-              We are constantly adding more local businesses! You can also make a custom request for anything from anywhere you'd like! Remember you can give anything as a gift for someone else! Thanks for supporting local business and spreading joy amidst this time of chaos.
+              Thanks for spreading love and joy with us during the last month and half. We had a blast while it lasted –– we decided to close down Changing Capernaum
+              as the market now is shifting and people don't need as much delivery, and we both have gotten busy with other jobs. Sorry to dissapoint you today!
+              Thanks so much!
             </p>
             <hr />
           </div>
