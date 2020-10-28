@@ -1,5 +1,6 @@
 Website and Ordering Web app for local food/business delivery in Colorado Springs
 Changing Capernaum was a start-up business aimed to bring support during the height of the COVID-19 pandemic.
+See the discontinued app at changingcapernaum.com/order.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
